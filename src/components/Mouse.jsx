@@ -1,5 +1,4 @@
 function Mouse({ binds }) {
-  console.log(binds)
   return (
     <div className="mouse">
       <div className="mouse-body">

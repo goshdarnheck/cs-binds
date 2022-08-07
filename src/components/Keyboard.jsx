@@ -1,5 +1,4 @@
 function Keyboard({ keys, binds }) {
-
   return (
     <div className="keyboard">
       {keys.rows.map((row, i) => (

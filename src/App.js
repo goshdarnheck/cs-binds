@@ -30,7 +30,7 @@ function App() {
   const binds = parseConfig(pastedText);
 
   return (
-    <div>
+    <div className="wrapper">
       <header>
         <h1>CS:GO Keybind Visualizer</h1>
         <div id="settings">
@@ -41,8 +41,10 @@ function App() {
         </div>
       </header>
       <main>
-        <Keyboard keys={sixtyPercent} binds={binds} />
-        <Mouse binds={binds} />
+        <div className="devices">
+          <div><Keyboard keys={sixtyPercent} binds={binds} /></div>
+          <div><Mouse binds={binds} /></div>
+        </div>
         <Inputs
           pastedText={pastedText}
           onPastedChange={ev => setPastedText(ev.target.value)}

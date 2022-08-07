@@ -1,7 +1,10 @@
 const config =
 `bind "2" "slot2"
 bind "3" "slot3"
+bind "W" "+forward"
 bind "A" "+moveleft"
+bind "s" "+back"
+bind "d" "+moveright"
 
 bind "MOUSE1" "+attack"
 bind "MOUSE2" "+attack2"
