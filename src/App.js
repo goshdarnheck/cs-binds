@@ -3,7 +3,7 @@ import Keyboard from './components/Keyboard';
 import Mouse from './components/Mouse';
 import Inputs from './components/Inputs';
 import sixtyPercent from "./keyboards/sixty-percent.json";
-import test from "./configs/test";
+import stock from "./configs/stock";
 import './App.css';
 
 function parseConfig(config) {
@@ -25,7 +25,7 @@ function parseConfig(config) {
 }
 
 function App() {
-  const [pastedText, setPastedText] = useState(test);
+  const [pastedText, setPastedText] = useState(stock);
 
   const binds = parseConfig(pastedText);
 
