@@ -14,10 +14,10 @@
       { "label": "0", "code": "0" },
       { "label": "-", "code": "-" },
       { "label": "=", "code": "=" },
-      { "label": "←", "code": "backspace", "width": "6.4em" }
+      { "label": "←", "code": "backspace", "ratio": 2.09 }
     ],
     [
-      { "label": "Tab", "code": "tab", "width": "5em" },
+      { "label": "Tab", "code": "tab", "ratio": 1.53 },
       { "label": "Q", "code": "q" },
       { "label": "W", "code": "w" },
       { "label": "E", "code": "e" },
@@ -30,10 +30,10 @@
       { "label": "P", "code": "p" },
       { "label": "[", "code": "[" },
       { "label": "]", "code": "]" },
-      { "label": "\\", "code": "\\", "width": "5em" }
+      { "label": "\\", "code": "\\", "ratio": 1.53 }
     ],
     [
-      { "label": "Caps Lk", "code": "capslock", "width": "6.2em" },
+      { "label": "Caps Lk", "code": "capslock", "ratio": 1.82 },
       { "label": "A", "code": "a" },
       { "label": "S", "code": "s" },
       { "label": "D", "code": "d" },
@@ -45,10 +45,10 @@
       { "label": "L", "code": "l" },
       { "label": ";", "code": ";" },
       { "label": "'", "code": "'" },
-      { "label": "Enter", "code": "enter", "width": "7.6em" }
+      { "label": "Enter", "code": "enter", "ratio": 2.35 }
     ],
     [
-      { "label": "Shift", "code": "shift", "width": "7.8em" },
+      { "label": "Shift", "code": "shift", "ratio": 2.35 },
       { "label": "Z", "code": "z" },
       { "label": "X", "code": "x" },
       { "label": "C", "code": "c" },
@@ -59,17 +59,17 @@
       { "label": ",", "code": "," },
       { "label": ".", "code": "." },
       { "label": "/", "code": "/" },
-      { "label": "Shift", "code": "rshift", "width": "9em" }
+      { "label": "Shift", "code": "rshift", "ratio": 2.88 }
     ],
     [
-      { "label": "Ctrl", "code": "ctrl", "width": "4em" },
-      { "label": "Win", "code": "win", "width": "4em" },
-      { "label": "Alt", "code": "alt", "width": "4em" },
-      { "label": "Space", "code": "space", "width": "18em" },
-      { "label": "Alt", "code": "ralt", "width": "4em" },
-      { "label": "☰", "code": "context", "width": "4em" },
-      { "label": "Ctrl", "code": "rctrl", "width": "4em" },
-      { "label": "FN", "code": "fn", "width": "4em" }
+      { "label": "Ctrl", "code": "ctrl", "ratio": 1.3 },
+      { "label": "Win", "code": "win", "ratio": 1.3 },
+      { "label": "Alt", "code": "alt", "ratio": 1.3 },
+      { "label": "Space", "code": "space", "ratio": 6.8 },
+      { "label": "Alt", "code": "ralt", "ratio": 1.3 },
+      { "label": "☰", "code": "context", "ratio": 1.3 },
+      { "label": "Ctrl", "code": "rctrl", "ratio": 1.3 },
+      { "label": "FN", "code": "fn", "ratio": 1.3 }
     ]
   ]
 }
