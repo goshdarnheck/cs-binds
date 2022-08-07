@@ -1,0 +1,51 @@
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+:after {
+  box-sizing: inherit;
+}
+
+.keyboard {
+  border: 1px solid #333;
+  font-size: 2rem;
+  padding: 0.1em;
+  margin: 0 auto 3rem;
+  width: fit-content;
+}
+
+.keyboard-row {
+  display: flex;
+}
+
+.keyboard-key {
+  border: 1px solid #333;
+  height: 2em;
+  flex-grow: 1;
+  margin: 0.1em;
+  min-width: fit-content;
+  text-align: center;
+  width: 2em;
+  white-space: nowrap;
+}
+
+.keyboard-key.bound {
+  background-color: pink;
+}
+
+.inputs textarea {
+  width: 100%;
+}
