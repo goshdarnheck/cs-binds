@@ -2,6 +2,8 @@
 
 A web app for parsing CS:GO keybinds from config files and visualizing them on a keyboard.
 
+A live version is available at https://csbinds.eyehack.com/.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
