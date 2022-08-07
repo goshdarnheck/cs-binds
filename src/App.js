@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Keyboard from './components/Keyboard';
+import Mouse from './components/Mouse';
 import Inputs from './components/Inputs';
 import sixtyPercent from "./keyboards/sixty-percent.json";
 import test from "./configs/test";
@@ -41,6 +42,7 @@ function App() {
       </header>
       <main>
         <Keyboard keys={sixtyPercent} binds={binds} />
+        <Mouse binds={binds} />
         <Inputs
           pastedText={pastedText}
           onPastedChange={ev => setPastedText(ev.target.value)}
