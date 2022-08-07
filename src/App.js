@@ -12,7 +12,7 @@ function parseConfig(config) {
   lines.forEach(line => {
     const parts = line.trim().match(/[^\s"']+|"[^"]*"|'[^']*'/g);
 
-    if (parts && parts[0] === 'bind') {
+    if (parts && parts[0] === 'bind' && parts.length > 2) {
       const code = parts[1].replace(/['"]+/g, '');
       const command = parts[2].replace(/['"]+/g, '');
 
