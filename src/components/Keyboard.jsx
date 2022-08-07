@@ -8,7 +8,7 @@ function Keyboard({ keys, binds }) {
             <div
               key={key.code}
               className={`keyboard-key ${binds[key.code] ? 'bound' : ''}`}
-              style={{ width: key.width ? key.width : '2em'}}
+              style={{ width: key.width ? key.width : '3em'}}
               title={`${binds[key.code] ? binds[key.code] : ''}`}
             >
               {key.label}

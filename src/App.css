@@ -32,7 +32,7 @@ h1 {
 .keyboard {
   border: 0.1em solid #222;
   background: #fff;
-
+  font-size: 1.8rem;
   padding: 0.1em;
   margin: 0 auto 3rem;
   width: fit-content;
@@ -45,14 +45,15 @@ h1 {
 .keyboard-key {
   background: #222;
   color: #fff;
-  height: 2em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-grow: 1;
-  font-size: 2rem;
   margin: 0.1em;
   min-width: fit-content;
   padding: 0.4em;
-  text-align: center;
-  width: 2em;
+  width: 3em;
   white-space: nowrap;
 }
 
