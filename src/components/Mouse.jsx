@@ -69,7 +69,7 @@ function Mouse({ binds }) {
           className={
             `mouse-key
             mouse-key-5 ${binds['mouse5'] ? 'bound' : ''}
-            ${commands[binds['mouse5']] ? commands[binds['momouse5use1']].type : 'ctype-other'}`
+            ${commands[binds['mouse5']] ? commands[binds['mouse5']].type : 'ctype-other'}`
           }
           title={`${binds['mouse5'] ? binds['mouse5'] : ''}`}
         >
