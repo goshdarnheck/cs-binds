@@ -4,7 +4,7 @@ import Mouse from './components/Mouse';
 import Inputs from './components/Inputs';
 import sixtyPercent from "./keyboards/sixty-percent.json";
 import stock from "./configs/stock";
-import './App.css';
+import './styles/App.css';
 
 function parseConfig(config) {
   const binds = {};

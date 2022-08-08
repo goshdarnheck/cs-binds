@@ -1,4 +1,5 @@
 import { commands } from '../utils/commands';
+import '../styles/Mouse.css';
 
 function Mouse({ binds }) {
   return (

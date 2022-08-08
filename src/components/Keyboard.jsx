@@ -1,4 +1,5 @@
 import { commands } from '../utils/commands';
+import '../styles/Keyboard.css';
 
 function Keyboard({ keys, binds }) {
   return (
