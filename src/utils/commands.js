@@ -38,6 +38,7 @@ const commands = {
   '+voicerecord': { type: TYPE_COMMS },
   'messagemode': { type: TYPE_COMMS },
   'messagemode2': { type: TYPE_COMMS },
+  'radio': { type: TYPE_COMMS },
   '+radialradio': { type: TYPE_COMMS },
   '+radialradio2': { type: TYPE_COMMS },
   '+radialradio3': { type: TYPE_COMMS },
