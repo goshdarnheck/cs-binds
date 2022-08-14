@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import KeyboardSixty from './components/KeyboardSixty';
 import KeyboardFull from './components/KeyboardFull';
 import Mouse from './components/Mouse';
 import Inputs from './components/Inputs';
 import sixtyPercent from "./keyboards/sixty-percent.json";
 import stock from "./configs/stock";
+import "normalize.css/normalize.css";
 import './styles/App.css';
 
 const KEYBOARD_TYPE_FULL = 'full';
@@ -32,8 +33,11 @@ function parseConfig(config) {
 function App() {
   const [keyboardType, setkeyboardType] = useState(KEYBOARD_TYPES[0]);
   const [pastedText, setPastedText] = useState(stock);
+  const [binds, setBinds] = useState(stock);
 
-  const binds = parseConfig(pastedText);
+  useEffect(() => {
+    setBinds(parseConfig(pastedText));
+  }, [pastedText])
 
   return (
     <div>
