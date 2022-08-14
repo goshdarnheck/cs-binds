@@ -8,6 +8,7 @@
   --buy: #3b0;
   --action: #986;
   --comms: #c3b;
+  --font-family: Consolas, Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -17,10 +18,10 @@ html {
 body {
   background-color: var(--dark);
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family);
   font-size: 1.6rem;
   margin: 0;
-  padding: 1em;
+  padding: 0;
 }
 
 *,
@@ -29,39 +30,74 @@ body {
   box-sizing: inherit;
 }
 
-.wrapper {
-  max-width: 80em;
-  margin: 0 auto;
+header {
+  background-color: var(--light);
+  color: var(--dark);
+  margin-bottom: 6rem;
+  padding: 1em 0;
 }
 
-header {
+header > div {
   align-items: center;
+  margin: 0 auto;
+  max-width: 75em;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 6rem;
 }
 
 h1 {
   margin: 0;
 }
 
-#settings label {
-  margin-right: 1em;
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 1em;
+  width: fit-content;
 }
 
-.devices {
+.settings {
+  align-items: center;
+  display: flex;
+}
+
+.settings select {
+  color: var(--dark);
+  font-family: var(--font-family);
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.settings label {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-right: 0.4em;
+}
+
+.keyboard-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+
+.other-wrapper {
   display: flex;
   gap: 3em;
-  justify-content: space-between;
-  margin-bottom: 6rem;
+  justify-content: center;
+}
+
+.other-wrapper > div:first-child {
+  flex-grow: 1;
 }
 
 .inputs label {
   display: block;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.6em;
 }
 
 .inputs textarea {
-  min-height: 20rem;
+  border: 0;
+  min-height: 27.2rem;
   width: 100%;
 }

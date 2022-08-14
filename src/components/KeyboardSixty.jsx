@@ -1,7 +1,7 @@
 import { commands } from '../utils/commands';
-import '../styles/Keyboard.css';
+import '../styles/KeyboardSixty.css';
 
-function Keyboard({ keys, binds }) {
+function KeyboardSixty({ keys, binds }) {
   return (
     <div className="keyboard">
       {keys.rows.map((row, i) => (
@@ -26,4 +26,4 @@ function Keyboard({ keys, binds }) {
   );
 }
 
-export default Keyboard
+export default KeyboardSixty

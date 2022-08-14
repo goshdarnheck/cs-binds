@@ -1,10 +1,15 @@
 import { useState } from 'react';
-import Keyboard from './components/Keyboard';
+import KeyboardSixty from './components/KeyboardSixty';
+import KeyboardFull from './components/KeyboardFull';
 import Mouse from './components/Mouse';
 import Inputs from './components/Inputs';
 import sixtyPercent from "./keyboards/sixty-percent.json";
 import stock from "./configs/stock";
 import './styles/App.css';
+
+const KEYBOARD_TYPE_FULL = 'full';
+const KEYBOARD_TYPE_SIXTY = 'sixty';
+const KEYBOARD_TYPES = [KEYBOARD_TYPE_FULL, KEYBOARD_TYPE_SIXTY];
 
 function parseConfig(config) {
   const binds = {};
@@ -25,30 +30,43 @@ function parseConfig(config) {
 }
 
 function App() {
+  const [keyboardType, setkeyboardType] = useState(KEYBOARD_TYPES[0]);
   const [pastedText, setPastedText] = useState(stock);
 
   const binds = parseConfig(pastedText);
 
   return (
-    <div className="wrapper">
+    <div>
       <header>
-        <h1>CS:GO Keybind Visualizer</h1>
-        <div id="settings">
-          <label htmlFor="keyboard-type">Keyboard</label>
-          <select id="keyboard-type">
-            <option>60% Keyboard</option>
-          </select>
+        <div>
+          <h1>CS:GO Keybind Visualizer</h1>
+          <div className="settings">
+            <label htmlFor="keyboard-type">Keyboard:</label>
+            <select
+              id="keyboard-type"
+              value={keyboardType}
+              onChange={ev => setkeyboardType(ev.target.value)}
+            >
+              <option value={KEYBOARD_TYPE_FULL}>Full</option>
+              <option value={KEYBOARD_TYPE_SIXTY}>60%</option>
+            </select>
+          </div>
         </div>
       </header>
       <main>
-        <div className="devices">
-          <div><Keyboard keys={sixtyPercent} binds={binds} /></div>
+        <div className="keyboard-wrapper">
+          {keyboardType === KEYBOARD_TYPE_FULL && <KeyboardFull binds={binds} />}
+          {keyboardType === KEYBOARD_TYPE_SIXTY && <KeyboardSixty keys={sixtyPercent} binds={binds} />}
+        </div>
+        <div className="other-wrapper">
+          <div>
+            <Inputs
+              pastedText={pastedText}
+              onPastedChange={ev => setPastedText(ev.target.value)}
+            />
+          </div>
           <div><Mouse binds={binds} /></div>
         </div>
-        <Inputs
-          pastedText={pastedText}
-          onPastedChange={ev => setPastedText(ev.target.value)}
-        />
       </main>
       <footer></footer>
     </div>

@@ -1,0 +1,100 @@
+.kb {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  width: fit-content;
+}
+
+.kb-main > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kb-main-top {
+  display: flex;
+}
+
+.kb-main-top > div {
+  display: flex;
+}
+
+.kb-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.kb-controls {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+}
+
+.kb-controls .kb-key > span {
+  font-size: 0.6em;
+  text-align: center;
+}
+
+.kb-arrows {
+  align-self: flex-end;
+  display: grid;
+  grid-template-areas: "x up y"
+    "left down right";
+}
+
+.kb-numpad {
+  align-self: flex-end;
+}
+
+.kb-numpad > div {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+}
+
+.kb-numpad .kb-key > span {
+  font-size: 0.6em;
+}
+
+.kb-key {
+  align-items: center;
+  background: var(--dark);
+  box-shadow: inset 0 0 0 0.1em var(--light);
+  color: var(--light);
+  display: flex;
+  height: 3em;
+  font-weight: 700;
+  justify-content: center;
+  margin: 0.14em;
+  min-width: fit-content;
+  white-space: nowrap;
+  width: 3em;
+}
+
+.kb-key.bound {
+  box-shadow: inset 0 0 0 0.3em var(--highlight);
+  color: var(--highlight);
+}
+
+.kb-key.bound.ctype-movement {
+  box-shadow: inset 0 0 0 0.3em var(--movement);
+  color: var(--movement);
+}
+
+.kb-key.bound.ctype-slot {
+  box-shadow: inset 0 0 0 0.3em var(--slot);
+  color: var(--slot);
+}
+
+.kb-key.bound.ctype-buy {
+  box-shadow: inset 0 0 0 0.3em var(--buy);
+  color: var(--buy);
+}
+
+.kb-key.bound.ctype-action {
+  box-shadow: inset 0 0 0 0.3em var(--action);
+  color: var(--action);
+}
+
+.kb-key.bound.ctype-comms {
+  box-shadow: inset 0 0 0 0.3em var(--comms);
+  color: var(--comms);
+}
