@@ -3,10 +3,10 @@ import KeyboardSixty from './components/KeyboardSixty';
 import KeyboardFull from './components/KeyboardFull';
 import Mouse from './components/Mouse';
 import Inputs from './components/Inputs';
-import sixtyPercent from "./keyboards/sixty-percent.json";
 import stock from "./configs/stock";
 import "normalize.css/normalize.css";
 import './styles/App.css';
+import './styles/Keyboard.css';
 
 const KEYBOARD_TYPE_FULL = 'full';
 const KEYBOARD_TYPE_SIXTY = 'sixty';
@@ -60,7 +60,7 @@ function App() {
       <main>
         <div className="keyboard-wrapper">
           {keyboardType === KEYBOARD_TYPE_FULL && <KeyboardFull binds={binds} />}
-          {keyboardType === KEYBOARD_TYPE_SIXTY && <KeyboardSixty keys={sixtyPercent} binds={binds} />}
+          {keyboardType === KEYBOARD_TYPE_SIXTY && <KeyboardSixty binds={binds} />}
         </div>
         <div className="other-wrapper">
           <div>

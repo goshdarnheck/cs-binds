@@ -1,5 +1,4 @@
 import Key from './Key';
-import '../styles/KeyboardFull.css';
 
 function KeyboardFull({ binds }) {
   return (
@@ -93,9 +92,9 @@ function KeyboardFull({ binds }) {
           <Key label="Alt" bind={binds['alt']} widthMultiplier={1.3} />
           <Key label="Space" bind={binds['space']} widthMultiplier={6.8} />
           <Key label="Alt" bind={binds['ralt']} widthMultiplier={1.3} />
+          <Key label="FN" bind={binds['_no_bind']} widthMultiplier={1.3} />
           <Key label="☰" bind={binds['_no_bind']} widthMultiplier={1.3} />
           <Key label="Ctrl" bind={binds['rctrl']} widthMultiplier={1.3} />
-          <Key label="FN" bind={binds['_no_bind']} widthMultiplier={1.3} />
         </div>
       </div>
       <div className="kb-middle">
