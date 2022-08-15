@@ -1,0 +1,9 @@
+.info {
+  margin-bottom: 3em;
+}
+
+.info code {
+  background-color: var(--other);
+  color: var(--dark);
+  padding: 0 0.28em;
+}

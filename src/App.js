@@ -4,6 +4,7 @@ import KeyboardFull from './components/KeyboardFull';
 import Legend from './components/Legend';
 import Mouse from './components/Mouse';
 import Inputs from './components/Inputs';
+import Info from './components/Info';
 import stock from "./configs/stock";
 import "normalize.css/normalize.css";
 import './styles/App.css';
@@ -90,6 +91,7 @@ function App() {
           />
           <Mouse binds={binds} />
         </div>
+        <Info />
       </main>
       <footer></footer>
     </div>
