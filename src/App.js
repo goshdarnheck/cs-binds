@@ -32,12 +32,13 @@ function parseConfig(config) {
 
 function App() {
   const [keyboardType, setkeyboardType] = useState(KEYBOARD_TYPES[0]);
-  const [pastedText, setPastedText] = useState(stock);
+  const [configText, setConfigText] = useState(stock);
+  const [configFileSelected, setConfigFileSelected] = useState(false);
   const [binds, setBinds] = useState(stock);
 
   useEffect(() => {
-    setBinds(parseConfig(pastedText));
-  }, [pastedText])
+    setBinds(parseConfig(configText));
+  }, [configText])
 
   return (
     <div>
@@ -62,14 +63,30 @@ function App() {
           {keyboardType === KEYBOARD_TYPE_FULL && <KeyboardFull binds={binds} />}
           {keyboardType === KEYBOARD_TYPE_SIXTY && <KeyboardSixty binds={binds} />}
         </div>
-        <div className="other-wrapper">
-          <div>
-            <Inputs
-              pastedText={pastedText}
-              onPastedChange={ev => setPastedText(ev.target.value)}
-            />
-          </div>
-          <div><Mouse binds={binds} /></div>
+        <div className="inputs-mouse-wrapper">
+          <Inputs
+            configText={configText}
+            configFileSelected={configFileSelected}
+            onConfigTextChange={ev => setConfigText(ev.target.value)}
+            onChangeFile={ev => {
+              if (ev.target.files && ev.target.files[0].name) {
+                setConfigFileSelected(true);
+              }
+            }}
+            loadFile={() => {
+              const configFileInput = document.querySelector('#config-file');
+
+              if (configFileInput.files && configFileInput.files.length > 0) {
+                const file = configFileInput.files[0];
+                const reader = new FileReader();
+              
+                reader.readAsText(file, "UTF-8");
+                reader.onload = () => setConfigText(reader.result);
+                reader.onerror = () => alert(reader.error);
+              }
+            }}
+          />
+          <Mouse binds={binds} />
         </div>
       </main>
       <footer></footer>

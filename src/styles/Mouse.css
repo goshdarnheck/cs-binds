@@ -4,7 +4,7 @@
 
 .mouse-body {
   border-radius: 7em 7em 8em 8em;
-  box-shadow: inset 0 0 0 0.3em var(--light);
+  box-shadow: inset 0 0 0 0.3em var(--other);
   height: 30rem;
   position: relative;
   width: 18rem;
@@ -13,7 +13,8 @@
 .mouse-key {
   align-items: center;
   background-color: var(--dark);
-  box-shadow: inset 0 0 0 0.1em var(--light);
+  box-shadow: inset 0 0 0 0.1em var(--other);
+  color: var(--other);
   display: flex;
   justify-content: center;
   position: absolute;
