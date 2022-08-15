@@ -1,0 +1,39 @@
+.legend {
+  display: flex;
+  gap: 2em;
+  margin-bottom: 3em;
+}
+
+.legend > div {
+  align-items: center;
+  display: flex;
+  margin: 0.14em;
+}
+
+.legend > div:before {
+  content: '';
+  display: inline-block;
+  height: 1em;
+  margin-right: 0.4em;
+  width: 1em;
+}
+
+.legend > div.legend-ctype-movement:before {
+  background-color: var(--movement);
+}
+
+.legend > div.legend-ctype-slot:before {
+  background-color: var(--slot);
+}
+
+.legend > div.legend-ctype-buy:before {
+  background-color: var(--buy);
+}
+
+.legend > div.legend-ctype-action:before {
+  background-color: var(--action);
+}
+
+.legend > div.legend-ctype-comms:before {
+  background-color: var(--comms);
+}

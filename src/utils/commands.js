@@ -1,8 +1,16 @@
 const TYPE_MOVEMENT = 'ctype-movement';
 const TYPE_SLOT = 'ctype-slot';
-const TYPE_BUY = 'ctype-buy';
 const TYPE_ACTION = 'ctype-action';
 const TYPE_COMMS = 'ctype-comms';
+const TYPE_BUY = 'ctype-buy';
+
+const COMMAND_TYPES = {
+  [TYPE_MOVEMENT]: 'Movement',
+  [TYPE_SLOT]: 'Equipment',
+  [TYPE_ACTION]: 'Actions',
+  [TYPE_COMMS]: 'Communication',
+  [TYPE_BUY]: 'Buying'
+};
 
 const commands = {
   '+moveleft': { type: TYPE_MOVEMENT },
@@ -45,4 +53,4 @@ const commands = {
   'player_ping': { type: TYPE_COMMS }
 }
 
-export { commands };
+export { commands, COMMAND_TYPES };

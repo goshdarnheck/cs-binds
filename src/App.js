@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import KeyboardSixty from './components/KeyboardSixty';
 import KeyboardFull from './components/KeyboardFull';
+import Legend from './components/Legend';
 import Mouse from './components/Mouse';
 import Inputs from './components/Inputs';
 import stock from "./configs/stock";
@@ -63,6 +64,7 @@ function App() {
           {keyboardType === KEYBOARD_TYPE_FULL && <KeyboardFull binds={binds} />}
           {keyboardType === KEYBOARD_TYPE_SIXTY && <KeyboardSixty binds={binds} />}
         </div>
+        <Legend />
         <div className="inputs-mouse-wrapper">
           <Inputs
             configText={configText}

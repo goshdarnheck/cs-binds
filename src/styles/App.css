@@ -78,7 +78,7 @@ main {
 .keyboard-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 6rem;
+  margin-bottom: 1rem;
 }
 
 .inputs-mouse-wrapper {

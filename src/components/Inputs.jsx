@@ -14,7 +14,7 @@ function Inputs({ configText, configFileSelected, onConfigTextChange, onChangeFi
           <label htmlFor="config-file">Or select your config file:</label>
         </div>
         <input type="file" id="config-file" onChange={onChangeFile} />
-        <button disabled={!configFileSelected} onClick={loadFile}>Load Selected File</button>
+        <button disabled={!configFileSelected} onClick={loadFile}>Import Selected File</button>
       </div>
     </div>
   );
