@@ -1,4 +1,5 @@
 import { commands } from '../utils/commands';
+import CommandIcon from './CommandIcon';
 
 function Key({ label, bind, style, widthMultiplier }) {
   return (
@@ -13,7 +14,8 @@ function Key({ label, bind, style, widthMultiplier }) {
         ${bind ? 'bound' : ''}
         ${commands[bind] ? commands[bind].type : 'ctype-other'}`}
     >
-      {label}
+      <span className="kb-key-label">{label}</span>
+      <CommandIcon bind={bind} />
     </div>
   );
 }
