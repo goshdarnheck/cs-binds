@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import parseConfig from './utils/parseConfig';
 import KeyboardSixty from './components/KeyboardSixty';
 import KeyboardFull from './components/KeyboardFull';
 import Legend from './components/Legend';
@@ -13,24 +14,6 @@ import './styles/Keyboard.css';
 const KEYBOARD_TYPE_FULL = 'full';
 const KEYBOARD_TYPE_SIXTY = 'sixty';
 const KEYBOARD_TYPES = [KEYBOARD_TYPE_FULL, KEYBOARD_TYPE_SIXTY];
-
-function parseConfig(config) {
-  const binds = {};
-  const lines = config.trim().split(/\r?\n|\r|\n/g);
-
-  lines.forEach(line => {
-    const parts = line.trim().match(/[^\s"']+|"[^"]*"|'[^']*'/g);
-
-    if (parts && parts[0] === 'bind' && parts.length > 2) {
-      const code = parts[1].replace(/['"]+/g, '');
-      const command = parts[2].replace(/['"]+/g, '');
-
-      binds[code.toLowerCase()] = command;
-    }
-  })
-
-  return binds;
-}
 
 function App() {
   const [keyboardType, setkeyboardType] = useState(KEYBOARD_TYPES[0]);
