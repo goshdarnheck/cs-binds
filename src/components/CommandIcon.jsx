@@ -1,10 +1,12 @@
 import { commands } from '../utils/commands';
 import { ReactComponent as IconSmoke } from '../icons/smoke.svg'
 import { ReactComponent as IconHe } from '../icons/he.svg'
+import { ReactComponent as IconMolly } from '../icons/molly.svg'
 
 const ICONS_COMMAND = {
   smoke: <IconSmoke />,
-  he: <IconHe />
+  he: <IconHe />,
+  molly: <IconMolly />
 };
 
 function CommandIcon({ bind }) {

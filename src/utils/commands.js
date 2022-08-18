@@ -27,7 +27,7 @@ const commands = {
   'slot7': { type: TYPE_SLOT },
   'slot8': { type: TYPE_SLOT, icon: 'smoke' },
   'slot9': { type: TYPE_SLOT },
-  'slot10': { type: TYPE_SLOT },
+  'slot10': { type: TYPE_SLOT, icon: 'molly' },
   'slot11': { type: TYPE_SLOT },
   'slot12': { type: TYPE_SLOT },
   'slot13': { type: TYPE_SLOT },
