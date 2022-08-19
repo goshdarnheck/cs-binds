@@ -4,13 +4,17 @@ import { ReactComponent as IconHe } from '../icons/he.svg'
 import { ReactComponent as IconMolly } from '../icons/molly.svg'
 import { ReactComponent as IconFlashbang } from '../icons/flashbang.svg'
 import { ReactComponent as IconKnife } from '../icons/knife.svg'
+import { ReactComponent as IconSecondary } from '../icons/secondary.svg'
+import { ReactComponent as IconPrimary } from '../icons/primary.svg'
 
 const ICONS_COMMAND = {
   smoke: <IconSmoke />,
   he: <IconHe />,
   molly: <IconMolly />,
   flashbang: <IconFlashbang />,
-  knife: <IconKnife />
+  knife: <IconKnife />,
+  secondary: <IconSecondary />,
+  primary: <IconPrimary />
 };
 
 function CommandIcon({ bind }) {
