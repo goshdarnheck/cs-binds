@@ -6,6 +6,7 @@ import { ReactComponent as IconFlashbang } from '../icons/flashbang.svg'
 import { ReactComponent as IconKnife } from '../icons/knife.svg'
 import { ReactComponent as IconSecondary } from '../icons/secondary.svg'
 import { ReactComponent as IconPrimary } from '../icons/primary.svg'
+import { ReactComponent as IconC4 } from '../icons/c4.svg'
 
 const ICONS_COMMAND = {
   smoke: <IconSmoke />,
@@ -14,7 +15,8 @@ const ICONS_COMMAND = {
   flashbang: <IconFlashbang />,
   knife: <IconKnife />,
   secondary: <IconSecondary />,
-  primary: <IconPrimary />
+  primary: <IconPrimary />,
+  c4: <IconC4 />,
 };
 
 function CommandIcon({ bind }) {

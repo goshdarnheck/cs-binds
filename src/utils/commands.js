@@ -22,7 +22,7 @@ const commands = {
   'slot2': { type: TYPE_SLOT, icon: 'secondary' },
   'slot3': { type: TYPE_SLOT, icon: 'knife' },
   'slot4': { type: TYPE_SLOT },
-  'slot5': { type: TYPE_SLOT },
+  'slot5': { type: TYPE_SLOT, icon: 'c4' },
   'slot6': { type: TYPE_SLOT, icon: 'he' },
   'slot7': { type: TYPE_SLOT, icon: 'flashbang' },
   'slot8': { type: TYPE_SLOT, icon: 'smoke' },
