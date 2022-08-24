@@ -7,6 +7,8 @@ import { ReactComponent as IconKnife } from '../icons/knife.svg'
 import { ReactComponent as IconSecondary } from '../icons/secondary.svg'
 import { ReactComponent as IconPrimary } from '../icons/primary.svg'
 import { ReactComponent as IconC4 } from '../icons/c4.svg'
+import { ReactComponent as IconCycleNades } from '../icons/cycle-nades.svg'
+import { ReactComponent as IconDecoy } from '../icons/decoy.svg'
 
 const ICONS_COMMAND = {
   smoke: <IconSmoke />,
@@ -17,6 +19,8 @@ const ICONS_COMMAND = {
   secondary: <IconSecondary />,
   primary: <IconPrimary />,
   c4: <IconC4 />,
+  cycleNades: <IconCycleNades />,
+  decoy: <IconDecoy />,
 };
 
 function CommandIcon({ bind }) {
