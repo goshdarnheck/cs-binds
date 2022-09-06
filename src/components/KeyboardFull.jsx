@@ -99,15 +99,15 @@ function KeyboardFull({ binds }) {
       </div>
       <div className="kb-middle">
         <div className="kb-controls">
-          <Key label={<span>Print<br/>Screen</span>} bind={binds['_no_bind']} />
-          <Key label={<span>Scroll<br/>Lock</span>} bind={binds['scrolllock']} />
-          <Key label={<span>Pause<br/>Break</span>} bind={binds['pause']} />
-          <Key label={<span>Insert</span>} bind={binds['ins']} />
-          <Key label={<span>Home</span>} bind={binds['home']} />
-          <Key label={<span>Page<br/>Up</span>} bind={binds['pgup']} />
-          <Key label={<span>Delete</span>} bind={binds['del']} />
-          <Key label={<span>End</span>} bind={binds['end']} />
-          <Key label={<span>Page<br/>Down</span>} bind={binds['pgdn']} />
+          <Key label={<span>Print<br/>Screen</span>} bind={binds['_no_bind']} className="small" />
+          <Key label={<span>Scroll<br/>Lock</span>} bind={binds['scrolllock']} className="small" />
+          <Key label={<span>Pause<br/>Break</span>} bind={binds['pause']} className="small" />
+          <Key label={<span>Insert</span>} bind={binds['ins']} className="small" />
+          <Key label={<span>Home</span>} bind={binds['home']} className="small" />
+          <Key label={<span>Page<br/>Up</span>} bind={binds['pgup']} className="small" />
+          <Key label={<span>Delete</span>} bind={binds['del']} className="small" />
+          <Key label={<span>End</span>} bind={binds['end']} className="small" />
+          <Key label={<span>Page<br/>Down</span>} bind={binds['pgdn']} className="small" />
         </div>
         <div className="kb-arrows">
           <Key label="↑" bind={binds['uparrow']} style={{ gridArea: "up" }} />
@@ -118,7 +118,7 @@ function KeyboardFull({ binds }) {
       </div>
       <div className="kb-numpad">
         <div>
-          <Key label={<span>Num<br/>Lock</span>} bind={binds['numlock']} />
+          <Key label={<span>Num<br/>Lock</span>} bind={binds['numlock']} className="small" />
           <Key label="/" bind={binds['kp_slash']} />
           <Key label="*" bind={binds['kp_multipy']} />
           <Key label="-" bind={binds['kp_minus']} />
@@ -134,7 +134,7 @@ function KeyboardFull({ binds }) {
           <Key label="0" bind={binds['kp_ins']} style={{ width: "auto", gridArea: "5 / 1 / 6 / 3"}} />
           <Key label="." bind={binds['kp_del']} />
           <Key label="+" bind={binds['kp_plus']} style={{ height: "auto", gridArea: "2 / 4 / 4 / 5"}} />
-          <Key label={<span>Enter</span>} bind={binds['kp_enter']} style={{ height: "auto", gridArea: "4 / 4 / 6 / 5"}} />
+          <Key label="Enter" bind={binds['kp_enter']} className="small" style={{ height: "auto", gridArea: "4 / 4 / 6 / 5"}} />
         </div>
       </div>
     </div>

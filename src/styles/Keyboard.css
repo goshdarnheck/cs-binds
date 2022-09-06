@@ -29,11 +29,6 @@
   grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
 }
 
-.kb-controls .kb-key > span {
-  font-size: 0.6em;
-  text-align: center;
-}
-
 .kb-arrows {
   align-self: flex-end;
   display: grid;
@@ -50,10 +45,6 @@
   grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
 }
 
-.kb-numpad .kb-key > span {
-  font-size: 0.6em;
-}
-
 .kb-key {
   align-items: flex-start;
   background: var(--dark);
@@ -68,6 +59,12 @@
   position: relative;
   white-space: nowrap;
   width: 3em;
+}
+
+.kb-key.small .kb-key-label {
+  font-size: 0.6em;
+  padding: 0.8em 0;
+  text-align: center;
 }
 
 .kb-key.bound {
@@ -100,12 +97,6 @@
   color: var(--comms);
 }
 
-.kb-key-label {
-  position: relative;
-  padding: 0.4em 0;
-  z-index: 1;
-}
-
 .kb-key .command-icon {
   position: absolute;
   z-index: 0;
@@ -119,4 +110,10 @@
   display: block;
   height: 100%;
   width: 100%;
+}
+
+.kb-key-label {
+  position: relative;
+  padding: 0.4em 0;
+  z-index: 1;
 }
