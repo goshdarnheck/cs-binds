@@ -13,6 +13,7 @@ const COMMAND_TYPES = {
 };
 
 const commands = {
+  'cancelselect': { icon: 'cancel' },
   '+moveleft': { type: TYPE_MOVEMENT },
   '+moveright': { type: TYPE_MOVEMENT },
   '+back': { type: TYPE_MOVEMENT },

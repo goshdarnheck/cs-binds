@@ -11,6 +11,7 @@ import { ReactComponent as IconCycleNades } from '../icons/cycle-nades.svg'
 import { ReactComponent as IconDecoy } from '../icons/decoy.svg'
 import { ReactComponent as IconMediShot } from '../icons/medi-shot.svg'
 import { ReactComponent as IconBuymenu } from '../icons/buymenu.svg'
+import { ReactComponent as IconCancel } from '../icons/cancel.svg'
 
 const ICONS_COMMAND = {
   smoke: <IconSmoke />,
@@ -25,6 +26,7 @@ const ICONS_COMMAND = {
   decoy: <IconDecoy />,
   mediShot: <IconMediShot />,
   buymenu: <IconBuymenu />,
+  cancel: <IconCancel />,
 };
 
 function CommandIcon({ bind }) {
