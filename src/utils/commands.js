@@ -14,10 +14,13 @@ const COMMAND_TYPES = {
 
 const commands = {
   'cancelselect': { icon: 'cancel' },
-  '+moveleft': { type: TYPE_MOVEMENT },
-  '+moveright': { type: TYPE_MOVEMENT },
-  '+back': { type: TYPE_MOVEMENT },
-  '+forward': { type: TYPE_MOVEMENT },
+  '+moveleft': { type: TYPE_MOVEMENT, icon: 'arrowLeft' },
+  '+moveright': { type: TYPE_MOVEMENT, icon: 'arrowRight' },
+  '+back': { type: TYPE_MOVEMENT, icon: 'arrowDown' },
+  '+forward': { type: TYPE_MOVEMENT, icon: 'arrowUp' },
+  '+jump': { type: TYPE_MOVEMENT },
+  '+speed': { type: TYPE_MOVEMENT },
+  '+duck': { type: TYPE_MOVEMENT },
   'slot0': { type: TYPE_SLOT },
   'slot1': { type: TYPE_SLOT, icon: 'primary' },
   'slot2': { type: TYPE_SLOT, icon: 'secondary' },

@@ -12,6 +12,10 @@ import { ReactComponent as IconDecoy } from '../icons/decoy.svg'
 import { ReactComponent as IconMediShot } from '../icons/medi-shot.svg'
 import { ReactComponent as IconBuymenu } from '../icons/buymenu.svg'
 import { ReactComponent as IconCancel } from '../icons/cancel.svg'
+import { ReactComponent as IconArrowUp } from '../icons/arrow-up.svg'
+import { ReactComponent as IconArrowDown } from '../icons/arrow-down.svg'
+import { ReactComponent as IconArrowLeft } from '../icons/arrow-left.svg'
+import { ReactComponent as IconArrowRight } from '../icons/arrow-right.svg'
 
 const ICONS_COMMAND = {
   smoke: <IconSmoke />,
@@ -27,6 +31,10 @@ const ICONS_COMMAND = {
   mediShot: <IconMediShot />,
   buymenu: <IconBuymenu />,
   cancel: <IconCancel />,
+  arrowUp: <IconArrowUp />,
+  arrowDown: <IconArrowDown />,
+  arrowLeft: <IconArrowLeft />,
+  arrowRight: <IconArrowRight />,
 };
 
 function CommandIcon({ bind }) {
